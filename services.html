@@ -5,16 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services – Furry Republic LLC</title>
   <style>
-    html,body{margin:0;padding:0;height:100%;font-family:Arial,Helvetica,sans-serif;background:#000;color:#fff}
-    a{color:#fff;text-decoration:none}
-    nav{width:100%;padding:1rem;text-align:center}
-    nav a{margin:0 1rem;font-weight:bold}
-    main{max-width:800px;margin:3rem auto;padding:0 1rem;text-align:center}
-    h1{font-size:2.5rem;margin-bottom:1rem}
-    p{font-size:1.1rem;margin-bottom:2rem}
-    ul{list-style-type:none;padding:0;margin:0 0 3rem}
-    li{background:#111;border:1px solid #333;border-radius:8px;margin:0 0 1rem;padding:1rem;font-size:1rem}
-    .footer{padding:2rem 1rem;text-align:center;font-size:.9rem}
+    /* include padding/border in element’s width */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      /* width: 100%;  — redundant once using border-box */
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 3rem;
+    }
+
+    li {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin: 0 0 1rem;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    .footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: .9rem;
+    }
   </style>
 </head>
 <body>
@@ -28,10 +85,10 @@
     <h1>What We Provide</h1>
     <p>Furry Republic LLC builds software that helps businesses work better. Our core offerings are:</p>
     <ul>
-      <li><strong>Custom Web Apps</strong> – tailored, secure websites that automate your workflows.</li>
-      <li><strong>Mobile Apps</strong> – iOS &amp; Android apps that keep your customers connected.</li>
-      <li><strong>Cloud &amp; DevOps</strong> – setup and optimisation on AWS, Azure, and Google Cloud.</li>
-      <li><strong>Ongoing Support</strong> – maintenance, monitoring, and regular improvements.</li>
+      <li><strong>Custom Web Apps</strong> – tailored, secure websites that automate your workflows.</li>
+      <li><strong>Mobile Apps</strong> – iOS &amp; Android apps that keep your customers connected.</li>
+      <li><strong>Cloud &amp; DevOps</strong> – setup and optimisation on AWS, Azure, and Google Cloud.</li>
+      <li><strong>Ongoing Support</strong> – maintenance, monitoring, and regular improvements.</li>
     </ul>
   </main>
 
