@@ -5,75 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Furry Republic LLC</title>
   <style>
-    /* include padding/border in element’s width */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    nav {
-      /* width: 100%;  — redundant once using border-box */
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      font-weight: bold;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: #000000;
+      color: #333333; 
     }
 
     .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 70vh;
+      flex: 1; 
       text-align: center;
       padding: 1rem;
+      margin-top: 25vh;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin: 0 0 1rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #FFFFFF;
     }
 
     p {
       font-size: 1.1rem;
-      max-width: 680px;
-      margin: 0 auto 1rem;
+      margin-bottom: 1rem;
+      color: #FFFFFF;
+    }
+
+    .contact a {
+      color: #FFFFFF;
+      text-decoration: none;
     }
 
     .footer {
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
       font-size: .9rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="mailto:wolf@furryrepublic.com">Contact</a>
-  </nav>
-
-  <section id="home" class="content">
+  <div class="content">
     <h1>Furry Republic LLC</h1>
-  </section>
-
+    <p></p>
+    <p class="contact">
+      <a href="mailto:wolf@furryrepublic.com">wolf@furryrepublic.com</a>
+    </p>
+  </div>
   <div class="footer">
     <p>&copy; 2025 Furry Republic LLC – All rights reserved.</p>
   </div>
